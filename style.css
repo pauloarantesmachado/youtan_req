@@ -1,0 +1,208 @@
+body {
+  font-family: Arial,sans-serif;
+  color: #333333;
+  line-height: 1.3;
+}
+
+h1, h2 {
+  color: #232323;
+}
+
+
+#navbar {
+  position: fixed;
+  top: -10px;
+  left: 0px;
+  width: 300px;
+  height: 150%;
+  border-style: solid;
+  border-width: 3px;
+  
+}
+
+#navbar header {
+  text-align: center;
+}
+
+
+#nav-list {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #696969;
+}
+
+
+#nav-list li {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #595959;
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+}
+
+#nav-list li:hover {
+  animation-name: nav-list-item-color;
+  animation-duration: 90ms;
+  animation-fill-mode: forwards;
+  color: #00FEFF;
+}
+
+@keyframes nav-list-item-color {
+  100% {
+      background-color: #D8D8D8;
+      border-width: 2px;
+      border-color: #D5E87f;
+  }
+}
+
+.nav-link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+main {
+  margin-left: 350px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 250px;
+}
+
+main ol {
+  list-style: square;
+}
+
+main li {
+  margin-top: 15px;
+}
+
+
+code{
+  background-color: #E8E8E8;
+  display:block;
+  line-height: 1.5;
+  white-space: pre;
+  border-radius:0px;
+  padding: 4px;
+  padding-left: 20px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 60px;
+}
+.flowchart {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduzi o espaçamento */
+  padding: 15px; /* Reduzi o padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.node {
+  color: #fff; /* Texto branco para melhor contraste com as cores */
+  padding: 10px 15px; /* Reduzi o padding interno */
+  border-radius: 5px; /* Reduzi o border-radius */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.9em; /* Reduzi o tamanho da fonte */
+}
+
+.arrow {
+  font-size: 16px; /* Reduzi o tamanho da seta */
+  color: #777;
+}
+
+/* Estilos específicos para cada nó com cores distintas */
+.backlog {
+  background-color: #4caf50; /* Verde */
+  border: 1px solid #43a047;
+}
+
+.requirement {
+  background-color: #2196f3; /* Azul */
+  border: 1px solid #1e88e5;
+}
+
+.user-story {
+  background-color: #ff9800; /* Laranja */
+  border: 1px solid #f57c00;
+}
+
+.task {
+  background-color: #9c27b0; /* Roxo */
+  border: 1px solid #7b1fa2;
+}
+
+.branch {
+  background-color: #e91e63; /* Rosa */
+  border: 1px solid #c2185b;
+}
+
+.pull-request {
+  background-color: #607d8b; /* Cinza Azulado */
+  border: 1px solid #455a64;
+}
+
+.relationship-container {
+  overflow-x: auto;
+  width:100%;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  margin-top: 5px; /* Margem superior mínima da tabela */
+  background-color: #fff;
+  box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.05); /* Sombra quase imperceptível */
+  border-radius: 3px; /* Borda quase reta */
+  overflow: hidden;
+  font-size: 0.6em; /* Fonte da tabela extremamente pequena */
+}
+
+th, td {
+  padding: 3px 5px; /* Preenchimento quase inexistente */
+  text-align: center;
+  border-bottom: 0.5px solid #eee; /* Borda inferior bem fina e clara */
+  white-space: nowrap;
+}
+
+th {
+  background-color: #eee; /* Cabeçalho bem claro */
+  font-weight: normal; /* Fonte do cabeçalho normal */
+  color: #777; /* Cor do texto do cabeçalho bem suave */
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Hover quase imperceptível */
+}
+
+.us-column {
+  font-weight: normal; /* US sem tanto destaque */
+  background-color: #e8f5e9; /* Verde bem claro para US */
+  color: #555;
+}
+
+.req-row {
+  font-weight: normal; /* Requisitos sem tanto destaque */
+  background-color: #dcedc8; /* Verde ainda mais claro para Requisitos */
+  color: #555;
+}
+
+.related {
+  font-size: 0.7em; /* 'X' bem pequeno */
+  color: #388e3c; /* Verde mais escuro para o 'X', mas ainda pequeno */
+  line-height: 1; /* Reduzindo a altura da linha do 'X' */
+}
+
+@media(max-width: 1200px) {
+  body {
+    font-size: 80%;
+  }
+  main {
+    margin-right: 45px;
+}
