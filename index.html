@@ -6,112 +6,107 @@
   <title>Youtan Dash</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<head>
-    <title>Youtan Dash</title>
-  </head>
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>Youtan Dash</h1>
+    </header>
+    <ol id="nav-list">
+      <a href="#Introduction" class="nav-link"><li>Introdução</li></a>
+      <a href="#Requirements" class="nav-link"><li>Requisitos Funcionais</li></a>
+      <a href="#ReqTrack" class="nav-link"><li>Rastreamento de Requisitos</li></a>
+      <a href="#table" class="nav-link"><li>Tabela de rastreamento de Requisitos</li></a>
+    </ol>
+  </nav>
   
-  <body>
-    <nav id="navbar">
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
       <header>
-        <h1>Youtan Dash</h1>
+        <h2>Introdução</h2>
       </header>
-      <ol id="nav-list">
-        <a href="#Introduction" class="nav-link"><li>Introdução</li></a>
-        <a href="#Requirements" class="nav-link"><li>Requisitos Funcionais</li></a>
-        <a href="#ReqTrack" class="nav-link"><li>Rastreamento de Requisitos</li></a>
-        <a href="#table" class="nav-link"><li>Tabela de rastreamento de Requisitos</li></a>
-      </ol>
-    </nav>
-    <main id="main-doc">
-      <section id="Introduction" class="main-section">
-        <header>
-          <h2>Introdução</h2>
-        </header>
-        <article>
+      <article>
         <p>
-            Com o intuito de aprimorar a visualização da produtividade da Empresa, a Youtan solicitou uma ferramenta que apresente, por meio de um dashboard, os indicadores de desempenho de cada operador e gestor. Por exemplo, em uma equipe, há um gestor responsável pela administração do grupo, enquanto os demais membros atuam como operadores. 
+          Com o intuito de aprimorar a visualização da produtividade da Empresa, a Youtan solicitou uma ferramenta que apresente, por meio de um dashboard, os indicadores de desempenho de cada operador e gestor. Por exemplo, em uma equipe, há um gestor responsável pela administração do grupo, enquanto os demais membros atuam como operadores. 
         </p>
        
         <p>
-            KPIs para o operador:
+          KPIs para o operador:
         </p>
         <ul>
-            <li>Seria necessário visualizar informações relacionadas a quantidade de cards em que o operador está participando.</li>
-            <li>Seria necessário verificar a quantidade de projetos nos quais o operador está envolvido. </li>
-            <li>Visualizar a quantidade de cards que foram criados e concluídos em um determinado período. </li>
-            <li>Visualizar o tempo médio de finalização dos cards por semana.</li>
-            <li>Visualizar os cards que estão em um determinado Status do projeto.</li>
+          <li>Seria necessário visualizar informações relacionadas a quantidade de cards em que o operador está participando.</li>
+          <li>Seria necessário verificar a quantidade de projetos nos quais o operador está envolvido.</li>
+          <li>Visualizar a quantidade de cards que foram criados e concluídos em um determinado período.</li>
+          <li>Visualizar o tempo médio de finalização dos cards por semana.</li>
+          <li>Visualizar os cards que estão em um determinado Status do projeto.</li>
         </ul>
 
         <p>
-            KPIs para um Gestor:
+          KPIs para um Gestor:
         </p>
         <ul>
-            <li>Seria útil visualizar a quantidade de cards em que cada operador está atuando</li>
-            <li>Seria relevante visualizar a quantidade de cards nos quais o gestor está participando.</li>
-            <li>Seria importante analisar o tempo médio de conclusão de tarefas por semana da equipe.</li>
-            <li>Visualizar a quantidade de cards criados e finalizados em todos os projetos nos quais o colaborador está envolvido.</li>
-            <li>A quantidade de issues por cada projeto e prioridade da issue.</li>
-            <li>Visualizar a quantidade de cards que sofreram retrabalho.</li>
-            <li>Visualizar a quantidade de cards por projeto pelos status.</li>
-            <li>Visualizar a quantidade tags por projeto.</li>
-
+          <li>Seria útil visualizar a quantidade de cards em que cada operador está atuando</li>
+          <li>Seria relevante visualizar a quantidade de cards nos quais o gestor está participando.</li>
+          <li>Seria importante analisar o tempo médio de conclusão de tarefas por semana da equipe.</li>
+          <li>Visualizar a quantidade de cards criados e finalizados em todos os projetos nos quais o colaborador está envolvido.</li>
+          <li>A quantidade de issues por cada projeto e prioridade da issue.</li>
+          <li>Visualizar a quantidade de cards que sofreram retrabalho.</li>
+          <li>Visualizar a quantidade de cards por projeto pelos status.</li>
+          <li>Visualizar a quantidade tags por projeto.</li>
         </ul>
 
         <p>
-            KPIs para o Admin:
+          KPIs para o Admin:
         </p>
         <ul>
-            <li>Visualizar a quantidade de cards em todos os projetos. </li>
-            <li>Visualizar a quantidade de projetos.</li>
-            <li>Números de Issue de cada projeto.</li>
-            <li>Visualizar gestor por projeto, e a quantidade de operadores nesse projeto</li>
-            <li>A quantidade de issues por cada projeto e prioridade da issue.</li>
-            <li>Visualizar cards criados e finalizados por um periodo </li>
+          <li>Visualizar a quantidade de cards em todos os projetos.</li>
+          <li>Visualizar a quantidade de projetos.</li>
+          <li>Números de Issue de cada projeto.</li>
+          <li>Visualizar gestor por projeto, e a quantidade de operadores nesse projeto</li>
+          <li>A quantidade de issues por cada projeto e prioridade da issue.</li>
+          <li>Visualizar cards criados e finalizados por um periodo</li>
         </ul>
-        </article>
-      </section>
+      </article>
+    </section>
 
-      <section id="Requirements" class="main-section">
-        <header>
-          <h2>Requisitos funcionais</h2>
-        </header>
-        <article>
-
+    <section id="Requirements" class="main-section">
+      <header>
+        <h2>Requisitos funcionais</h2>
+      </header>
+      <article>
         <h3><b>Funcionalidades do operador</b></h3>    
         <p>
-            Ao acessar o Youtan Dash como operador, você poderá visualizar tanto as informações do seu perfil quanto os dashboards com os indicadores relacionados  aos seus projetos. Essa funcionalidade permite que você acompanhe de forma centralizada todos os dados relevantes ao seu. 
+          Ao acessar o Youtan Dash como operador, você poderá visualizar tanto as informações do seu perfil quanto os dashboards com os indicadores relacionados aos seus projetos. Essa funcionalidade permite que você acompanhe de forma centralizada todos os dados relevantes ao seu. 
         </p>
        
         <p>
-            Lista de requisitos funcionais do operador:
+          Lista de requisitos funcionais do operador:
         </p>
         <ul>
-            <li>Requisito 01 - Total de cards: O sistema deverá apresentar um componente visual, denominado "card", que terá como objetivo exibir a quantidade total de cards nos quais o operador autenticado no sistema está vinculado como participante.</li>
-            <li>Requisito 02 - Total de projetos: O sistema deverá apresentar um componente visual, denominado "card", que terá como objetivo exibir a quantidade total de projetos nos quais o operador autenticado no sistema está vinculado como participante.</li>
-            <li>Requisito 03 - Tempo médio de conclusão de um card: O sistema deverá apresentar um componente visual, denominado "card", que terá como objetivo exibir o tempo médio de finalização dos cards. </li>
-            <li>Requisito 04 - Cards criados e finalizados em um período: O sistema deverá apresentar um componente visual em formato de gráfico que demonstre a quantidade de cards criados e a quantidade de cards finalizados dentro de um período selecionável.</li>
-            <li>Requisito 05 - Total de cards por status do projeto: O sistema deverá apresentar um componente visual em formato de gráfico que demonstre a quantidade de cards em cada um dos seguintes status dentro de um projeto específico: New, In Progress, Ready for Test, Closed e Needs Info. Este gráfico tem como objetivo fornecer uma visão clara da distribuição dos cards ao longo do fluxo de trabalho do projeto.</li>
-            <li>Requisito 06 - Informações sobre o perfil do operador: O sistema deverá apresentar ao operador autenticado na interface informações relevantes sobre sua conta.</li>
-            <li>Requisito 07 - Realizar login na aplicação: O sistema deve garantir que o operador seja designado para a função ROLE_USER, assegurando que ele tenha acesso e permissões adequadas para visualizar e interagir apenas com as informações que são exclusivamente sua.</li>
+          <li>Requisito 01 - Total de cards: O sistema deverá apresentar um componente visual, denominado "card", que terá como objetivo exibir a quantidade total de cards nos quais o operador autenticado no sistema está vinculado como participante.</li>
+          <li>Requisito 02 - Total de projetos: O sistema deverá apresentar um componente visual, denominado "card", que terá como objetivo exibir a quantidade total de projetos nos quais o operador autenticado no sistema está vinculado como participante.</li>
+          <li>Requisito 03 - Tempo médio de conclusão de um card: O sistema deverá apresentar um componente visual, denominado "card", que terá como objetivo exibir o tempo médio de finalização dos cards.</li>
+          <li>Requisito 04 - Cards criados e finalizados em um período: O sistema deverá apresentar um componente visual em formato de gráfico que demonstre a quantidade de cards criados e a quantidade de cards finalizados dentro de um período selecionável.</li>
+          <li>Requisito 05 - Total de cards por status do projeto: O sistema deverá apresentar um componente visual em formato de gráfico que demonstre a quantidade de cards em cada um dos seguintes status dentro de um projeto específico: New, In Progress, Ready for Test, Closed e Needs Info. Este gráfico tem como objetivo fornecer uma visão clara da distribuição dos cards ao longo do fluxo de trabalho do projeto.</li>
+          <li>Requisito 06 - Informações sobre o perfil do operador: O sistema deverá apresentar ao operador autenticado na interface informações relevantes sobre sua conta.</li>
+          <li>Requisito 07 - Realizar login na aplicação: O sistema deve garantir que o operador seja designado para a função ROLE_USER, assegurando que ele tenha acesso e permissões adequadas para visualizar e interagir apenas com as informações que são exclusivamente sua.</li>
         </ul>
 
         <h3><b>Funcionalidades do gestor</b></h3>    
         <p>
-            Ao acessar o Youtan Dash como gestor, você poderá visualizar tanto as informações do seu perfil quanto os painéis de acompanhamento com os indicadores relacionados aos projetos sob sua responsabilidade. Essa funcionalidade possibilita o monitoramento centralizado de todos os dados relevantes da sua equipe.
+          Ao acessar o Youtan Dash como gestor, você poderá visualizar tanto as informações do seu perfil quanto os painéis de acompanhamento com os indicadores relacionados aos projetos sob sua responsabilidade. Essa funcionalidade possibilita o monitoramento centralizado de todos os dados relevantes da sua equipe.
         </p>
        
         <ul>
-            <li>Requisito 08 - Quantidade de cards por operador sob gestão do gestor: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, a quantidade total de cards associados a cada um dos operadores sob sua gestão. Este card permitirá ao gestor ter uma visão geral da distribuição de cards entre sua equipe.</li>
-            <li>Requisito 09 - Total de cards atribuídos ao gestor: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, a quantidade total de cards que foram especificamente atribuídos a ele como responsável ou participante.</li>
-            <li>Requisito 10 - Tempo médio de finalização dos cards dos operadores sob gestão do gestor: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, o tempo médio de finalização dos cards concluídos por todos os operadores por semana.</li>
-            <li>Requisito 11 - Quantidade de cards que passaram por retrabalho: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, a quantidade de cards que foram identificados como tendo passado por retrabalho.</li>
-            <li>Requisito 12 - Total de cards por status nos projetos: O sistema deverá apresentar um componente visual em formato de gráfico de pizza que demonstre a quantidade de cards em cada um dos seguintes status dentro dos projetos: New, In Progress, Ready for Test, Closed e Needs Info. Este gráfico tem como objetivo fornecer uma visão clara da distribuição dos cards ao longo do fluxo de trabalho do projeto.</li>
-            <li>Requisito 13 - Quantidade de tipos de Issues nos projetos: O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de issues, agrupadas por projeto, prioridade e tipo (Bug, Enhancement, Question).</li>
-            <li>Requisito 14 - Cards criados e finalizados dentro de um período.: O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de cards criados e a quantidade de cards finalizados dentro de um período selecionável pelo gestor.</li>
-            <li>Requisito 15 - Quantidade de tags no projeto.:O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de cada tipo de tag utilizada em cada projeto.</li>
-            <li>Requisito 16 - Perfil do gestor : O sistema deverá apresentar ao gestor autenticado na interface informações relevantes sobre sua conta </li>
-            <li>Requisito 17 - Fazer login na aplicação: O sistema deve garantir que o gestor seja designado para a função ROLE_MANAGER, assegurando que ele tenha acesso e permissões adequadas para visualizar e gerenciar informações pertinentes aos projetos sob sua responsabilidade, bem como seus próprios dados, e cards dos operadores.</li>
+          <li>Requisito 08 - Quantidade de cards por operador sob gestão do gestor: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, a quantidade total de cards associados a cada um dos operadores sob sua gestão. Este card permitirá ao gestor ter uma visão geral da distribuição de cards entre sua equipe.</li>
+          <li>Requisito 09 - Total de cards atribuídos ao gestor: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, a quantidade total de cards que foram especificamente atribuídos a ele como responsável ou participante.</li>
+          <li>Requisito 10 - Tempo médio de finalização dos cards dos operadores sob gestão do gestor: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, o tempo médio de finalização dos cards concluídos por todos os operadores por semana.</li>
+          <li>Requisito 11 - Quantidade de cards que passaram por retrabalho: O sistema deverá apresentar um componente visual ("card") que exiba, para o gestor autenticado, a quantidade de cards que foram identificados como tendo passado por retrabalho.</li>
+          <li>Requisito 12 - Total de cards por status nos projetos: O sistema deverá apresentar um componente visual em formato de gráfico de pizza que demonstre a quantidade de cards em cada um dos seguintes status dentro dos projetos: New, In Progress, Ready for Test, Closed e Needs Info. Este gráfico tem como objetivo fornecer uma visão clara da distribuição dos cards ao longo do fluxo de trabalho do projeto.</li>
+          <li>Requisito 13 - Quantidade de tipos de Issues nos projetos: O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de issues, agrupadas por projeto, prioridade e tipo (Bug, Enhancement, Question).</li>
+          <li>Requisito 14 - Cards criados e finalizados dentro de um período.: O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de cards criados e a quantidade de cards finalizados dentro de um período selecionável pelo gestor.</li>
+          <li>Requisito 15 - Quantidade de tags no projeto.:O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de cada tipo de tag utilizada em cada projeto.</li>
+          <li>Requisito 16 - Perfil do gestor : O sistema deverá apresentar ao gestor autenticado na interface informações relevantes sobre sua conta</li>
+          <li>Requisito 17 - Fazer login na aplicação: O sistema deve garantir que o gestor seja designado para a função ROLE_MANAGER, assegurando que ele tenha acesso e permissões adequadas para visualizar e gerenciar informações pertinentes aos projetos sob sua responsabilidade, bem como seus próprios dados, e cards dos operadores.</li>
         </ul>
 
         <h3><b>Funcionalidades do Admin</b></h3>    
@@ -120,683 +115,177 @@
         </p>
        
         <ul>
-            <li>Requisito 18 - Total de Projetos: O sistema deverá apresentar um componente visual ("card") que exiba, a quantidade de projetos que o admin administra.</li>
-            <li>Requisito 19 - Total de Cards: O sistema deverá apresentar um componente visual("card") que exiba, a quantidade de cards por projeto.</li>
-            <li>Requisito 20 - Total de Issues: O sistema deverá apresentar um componente visual("card") que exiba, a quantidade de issues por projeto.</li>
-            <li>Requisito 21 - Gestor de cada projeto: O sistema deverá apresentar um componente de tabela para exibir o projeto, gestor e a quantidade de operadores.</li>
-            <li>Requisito 22 - Cadastrar usuário: O sistema deverá permitir o cadastro de novos usuários com perfis de administrador, gestor e operador. O cadastro exigirá nome completo, e-mail único e senha. além da seleção das Roles. Obrigatoriamente é necessário selecionar pelo menos uma ferramenta ETL de uma lista disponível. Taiga,Jira ou Trello.</li>
-            <li>Requisito 23 - Criar uma api para integração com outro sistema (trello, Jira): O sistema deve disponibilizar uma API (Application Programming Interface) para integração com sistemas externos, como Trello e Jira, permitindo a sincronização de dados, como cards, projetos, tarefas e indicadores, entre as plataformas.</li>
-            <li>Requisito 24 - Exportar dados para CSV: O sistema deverá permitir que o administrador exporte seus dados para um arquivo CSV através de um botão na interface do DashBoard.</li>
-            <li>Requisito 25 - Realizar o Login na aplicação: O sistema deve garantir que o administrador seja designado para a função ROLE_ADMIN, permitindo-lhe acessar e gerenciar informações relacionadas a todos os projetos, usuários e configurações do sistema.</li>
-            <li>Requisito 26 - Log para gestão na aplicação: Para garantir a rastreabilidade e auditoria, o sistema deverá apresentar ao administrador uma tabela detalhada de todas as ações executadas na aplicação.</li>
-            <li>Requisito 27- Cards criados e finalizados dentro de um período: O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de cards criados e a quantidade de cards finalizados dentro de um período de tempo selecionável pelo admin.</li>
-            <li>Requisito 28 - Perfil do admin: O sistema deverá apresentar ao admin autenticado na interface informações relevantes sobre sua conta,foto,username,email e role </li>
+          <li>Requisito 18 - Total de Projetos: O sistema deverá apresentar um componente visual ("card") que exiba, a quantidade de projetos que o admin administra.</li>
+          <li>Requisito 19 - Total de Cards: O sistema deverá apresentar um componente visual("card") que exiba, a quantidade de cards por projeto.</li>
+          <li>Requisito 20 - Total de Issues: O sistema deverá apresentar um componente visual("card") que exiba, a quantidade de issues por projeto.</li>
+          <li>Requisito 21 - Gestor de cada projeto: O sistema deverá apresentar um componente de tabela para exibir o projeto, gestor e a quantidade de operadores.</li>
+          <li>Requisito 22 - Cadastrar usuário: O sistema deverá permitir o cadastro de novos usuários com perfis de administrador, gestor e operador. O cadastro exigirá nome completo, e-mail único e senha. além da seleção das Roles. Obrigatoriamente é necessário selecionar pelo menos uma ferramenta ETL de uma lista disponível. Taiga,Jira ou Trello.</li>
+          <li>Requisito 23 - Criar uma api para integração com outro sistema (trello, Jira): O sistema deve disponibilizar uma API (Application Programming Interface) para integração com sistemas externos, como Trello e Jira, permitindo a sincronização de dados, como cards, projetos, tarefas e indicadores, entre as plataformas.</li>
+          <li>Requisito 24 - Exportar dados para CSV: O sistema deverá permitir que o administrador exporte seus dados para um arquivo CSV através de um botão na interface do DashBoard.</li>
+          <li>Requisito 25 - Realizar o Login na aplicação: O sistema deve garantir que o administrador seja designado para a função ROLE_ADMIN, permitindo-lhe acessar e gerenciar informações relacionadas a todos os projetos, usuários e configurações do sistema.</li>
+          <li>Requisito 26 - Log para gestão na aplicação: Para garantir a rastreabilidade e auditoria, o sistema deverá apresentar ao administrador uma tabela detalhada de todas as ações executadas na aplicação.</li>
+          <li>Requisito 27- Cards criados e finalizados dentro de um período: O sistema deverá apresentar um componente visual em formato de gráfico que exiba a quantidade de cards criados e a quantidade de cards finalizados dentro de um período de tempo selecionável pelo admin.</li>
+          <li>Requisito 28 - Perfil do admin: O sistema deverá apresentar ao admin autenticado na interface informações relevantes sobre sua conta,foto,username,email e role</li>
         </ul>
-        
-        </article>
-      </section>
+      </article>
+    </section>
 
-      <section id="ReqTrack" class="main-section">
-        <header>
-          <h2>Rastreamento de Requisitos</h2>
-        </header>
-        <article>
-          <div class="flowchart">
-            <div class="node requirement">Requisitos</div>
-            <div class="arrow">→</div>
-            <div class="node user-story">User Stories</div>
-            <div class="arrow">→</div>
-            <div class="node backlog">Backlog</div>
-            <div class="arrow">→</div>
-            <div class="node task">Tasks</div>
-            <div class="arrow">→</div>
-            <div class="node pull-request">Pull Request</div>
-          </div>
-        </article>
-        <article>
-          <h3>Requisitos</h3>
-          <p>A Youtan realiza um pedido de melhoria para o projeto Youtan Dash. Essa sugestão é transformada em requisitos, ao qual é atribuído um ID único e categorizado por persona.</p>
-          <h3>User Story</h3>
-          <p>Depois de definir os requisitos, o próxima passo é montar as user stories. A gente cria as user stories no Taiga e coloca o ID delas no título, que tá registrado no Backlog. Além disso, também colocamos uma lista de requisitos dentro da própria user story no Taiga.</p>
-          <h3>Backlog</h3>
-          <p>Ao adicionar uma user story ao backlog, detalhamos sua prioridade, vinculamos os requisitos correspondentes e especificamos a qual sprint ela será designada.</p>
-          <h3>Task</h3>
-          <p>Para a criação das tasks, o taiga oferece a funcionalidade de vinculá-las diretamente às user stories. A plataforma também gera automaticamente IDs para cada task.</p>
-          <p>Para a criação de branches, nós do grupo utilizamos o padrão:</p>
-          <p><b>feat/id_requisito/id_task/uma-curta-descricao-da-task</b></p>
-          <p>Essa padronização na nomenclatura de branches contribui significativamente para a rastreabilidade do desenvolvimento, permitindo uma clara vinculação entre o código, as tasks e as user stories correspondentes.</p>
-          <h3>Pull Request</h3>
-          <p>Para finalizar o rastreamento de requisitos no fluxo de desenvolvimento, o ponto crucial é a Pull Request. Nesse momento, priorizamos a inclusão do ID do requisito que está sendo implementado, garantindo assim a rastreabilidade completa até a entrega do código.</p>
-          <p>Exemplo de pull-request:</p>
-          <ul>
-            <li>feat:id_requisito/id_task/breve-descricao</li>
-            <li>feat:R23/id52/jwt implementation</li>
-          </ul>
-        </article>
-      </section>
-      <section id="table" class="main-section"></section>
-        <article>
-          <div class="relationship-container">
-            <h2>Tabela de relacionamento user story e requisitos</h2>
-            <p>O relacionamento entre as User Stories (US) e os Requisitos (R) definidos é detalhado na tabela apresentada. Esta tabela ilustra como cada necessidade do usuário, expressa através de uma User Story, está diretamente ligada aos requisitos funcionais específicos que devem ser implementados no sistema para atender a essa necessidade. O mapeamento fornecido visa garantir a rastreabilidade e a clara compreensão de como as funcionalidades do sistema se alinham com os objetivos e expectativas dos usuários.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="us-column">ID User Story</th>
-                        <th>R1</th>
-                        <th>R2</th>
-                        <th>R3</th>
-                        <th>R4</th>
-                        <th>R5</th>
-                        <th>R6</th>
-                        <th>R7</th>
-                        <th>R8</th>
-                        <th>R9</th>
-                        <th>R10</th>
-                        <th>R11</th>
-                        <th>R12</th>
-                        <th>R13</th>
-                        <th>R14</th>
-                        <th>R15</th>
-                        <th>R16</th>
-                        <th>R17</th>
-                        <th>R18</th>
-                        <th>R19</th>
-                        <th>R20</th>
-                        <th>R21</th>
-                        <th>R22</th>
-                        <th>R23</th>
-                        <th>R24</th>
-                        <th>R25</th>
-                        <th>R26</th>
-                        <th>R27</th>
-                        <th>R28</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="us-column">US01</td>
-                        <td class="related">X</td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US02</td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US03</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US04</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US05</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US06</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US07</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US08</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US09</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US10</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td class="related">X</td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US12</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US13</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US14</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US15</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US16</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US17</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="us-column">US18</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="related">X</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th class="req-row">Requisitos</th>
-                        <th class="req-row">R1</th>
-                        <th class="req-row">R2</th>
-                        <th class="req-row">R3</th>
-                        <th class="req-row">R4</th>
-                        <th class="req-row">R5</th>
-                        <th class="req-row">R6</th>
-                        <th class="req-row">R7</th>
-                        <th class="req-row">R8</th>
-                        <th class="req-row">R9</th>
-                        <th class="req-row">R10</th>
-                        <th class="req-row">R11</th>
-                        <th class="req-row">R12</th>
-                        <th class="req-row">R13</th>
-                        <th class="req-row">R14</th>
-                        <th class="req-row">R15</th>
-                        <th class="req-row">R16</th>
-                        <th class="req-row">R17</th>
-                        <th class="req-row">R18</th>
-                        <th class="req-row">R19</th>
-                        <th class="req-row">R20</th>
-                        <th class="req-row">R21</th>
-                        <th class="req-row">R22</th>
-                        <th class="req-row">R23</th>
-                        <th class="req-row">R24</th>
-                        <th class="req-row">R25</th>
-                        <th class="req-row">R26</th>
-                        <th class="req-row">R27</th>
-                        <th class="req-row">R28</th>
-                    </tr>
-                </tfoot>
-            </table>
+    <section id="ReqTrack" class="main-section">
+      <header>
+        <h2>Rastreamento de Requisitos</h2>
+      </header>
+      <article>
+        <div class="flowchart">
+          <div class="node requirement">Requisitos</div>
+          <div class="arrow">→</div>
+          <div class="node user-story">User Stories</div>
+          <div class="arrow">→</div>
+          <div class="node backlog">Backlog</div>
+          <div class="arrow">→</div>
+          <div class="node task">Tasks</div>
+          <div class="arrow">→</div>
+          <div class="node pull-request">Pull Request</div>
         </div>
-        </article>
-      </section>
-    </main>
-    <footer> 
-      <p>
-          © Copyright 2025 Manolito
-          </p> 
-    </footer>
-  </body>
+      </article>
+      <article>
+        <h3>Requisitos</h3>
+        <p>A Youtan realiza um pedido de melhoria para o projeto Youtan Dash. Essa sugestão é transformada em requisitos, ao qual é atribuído um ID único e categorizado por persona.</p>
+        <h3>User Story</h3>
+        <p>Depois de definir os requisitos, o próxima passo é montar as user stories. A gente cria as user stories no Taiga e coloca o ID delas no título, que tá registrado no Backlog. Além disso, também colocamos uma lista de requisitos dentro da própria user story no Taiga.</p>
+        <h3>Backlog</h3>
+        <p>Ao adicionar uma user story ao backlog, detalhamos sua prioridade, vinculamos os requisitos correspondentes e especificamos a qual sprint ela será designada.</p>
+        <h3>Task</h3>
+        <p>Para a criação das tasks, o taiga oferece a funcionalidade de vinculá-las diretamente às user stories. A plataforma também gera automaticamente IDs para cada task.</p>
+        <p>Para a criação de branches, nós do grupo utilizamos o padrão:</p>
+        <p><b>feat/id_requisito/id_task/uma-curta-descricao-da-task</b></p>
+        <p>Essa padronização na nomenclatura de branches contribui significativamente para a rastreabilidade do desenvolvimento, permitindo uma clara vinculação entre o código, as tasks e as user stories correspondentes.</p>
+        <h3>Pull Request</h3>
+        <p>Para finalizar o rastreamento de requisitos no fluxo de desenvolvimento, o ponto crucial é a Pull Request. Nesse momento, priorizamos a inclusão do ID do requisito que está sendo implementado, garantindo assim a rastreabilidade completa até a entrega do código.</p>
+        <p>Exemplo de pull-request:</p>
+        <ul>
+          <li>feat:id_requisito/id_task/breve-descricao</li>
+          <li>feat:R23/id52/jwt implementation</li>
+        </ul>
+      </article>
+    </section>
+    
+    <section id="table" class="main-section">
+      <article>
+        <div class="relationship-container">
+          <h2>Tabela de relacionamento user story e requisitos</h2>
+          <p>O relacionamento entre as User Stories (US) e os Requisitos (R) definidos é detalhado na tabela apresentada. Esta tabela ilustra como cada necessidade do usuário, expressa através de uma User Story, está diretamente ligada aos requisitos funcionais específicos que devem ser implementados no sistema para atender a essa necessidade. O mapeamento fornecido visa garantir a rastreabilidade e a clara compreensão de como as funcionalidades do sistema se alinham com os objetivos e expectativas dos usuários.</p>
+          
+          <table id="requirement-matrix">
+            <thead id="matrix-head">
+            </thead>
+            <tbody id="matrix-body">
+            </tbody>
+            <tfoot id="matrix-foot">
+            </tfoot>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+  
+  <footer> 
+    <p>© Copyright 2025 Manolito</p> 
+  </footer>
+
+  <script>
+    const requirementData = {
+      relationships: {
+        US01: ['R1', 'R2'],
+        US02: ['R3'],
+        US03: ['R4', 'R5'],
+        US04: ['R8', 'R9'],
+        US05: ['R14'],
+        US06: ['R12'],
+        US07: ['R10'],
+        US08: ['R11', 'R13'],
+        US09: ['R14'],
+        US10: ['R6', 'R7', 'R16', 'R17', 'R25', 'R28'],
+        US11: ['R22'],
+        US12: ['R18', 'R19'],
+        US13: ['R28'],
+        US14: ['R21'],
+        US15: ['R20'],
+        US16: ['R16'],
+        US17: ['R17'],
+        US18: ['R26']
+      },
+      
+      allRequirements: [
+        'R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'R8', 'R9', 'R10',
+        'R11', 'R12', 'R13', 'R14', 'R15', 'R16', 'R17', 'R18', 'R19', 'R20',
+        'R21', 'R22', 'R23', 'R24', 'R25', 'R26', 'R27', 'R28'
+      ],
+      
+      userStories: [
+        'US01', 'US02', 'US03', 'US04', 'US05', 'US06', 'US07', 'US08', 'US09',
+        'US10', 'US11', 'US12', 'US13', 'US14', 'US15', 'US16', 'US17', 'US18'
+      ]
+    };
+
+    function generateRequirementMatrix() {
+      const head = document.getElementById('matrix-head');
+      const body = document.getElementById('matrix-body');
+      const foot = document.getElementById('matrix-foot');
+      
+      head.innerHTML = '';
+      body.innerHTML = '';
+      foot.innerHTML = '';
+      
+      const headerRow = document.createElement('tr');
+      const usHeader = document.createElement('th');
+      usHeader.className = 'us-column';
+      usHeader.textContent = 'ID User Story';
+      headerRow.appendChild(usHeader);
+      
+      requirementData.allRequirements.forEach(req => {
+        const th = document.createElement('th');
+        th.textContent = req;
+        headerRow.appendChild(th);
+      });
+      
+      head.appendChild(headerRow);
+      
+      requirementData.userStories.forEach(us => {
+        const row = document.createElement('tr');
+        const usCell = document.createElement('td');
+        usCell.className = 'us-column';
+        usCell.textContent = us;
+        row.appendChild(usCell);
+        
+        requirementData.allRequirements.forEach(req => {
+          const td = document.createElement('td');
+          if (requirementData.relationships[us] && requirementData.relationships[us].includes(req)) {
+            td.className = 'related';
+            td.textContent = 'X';
+          }
+          row.appendChild(td);
+        });
+        
+        body.appendChild(row);
+      });
+      
+      const footerRow = document.createElement('tr');
+      const reqHeader = document.createElement('th');
+      reqHeader.className = 'req-row';
+      reqHeader.textContent = 'Requisitos';
+      footerRow.appendChild(reqHeader);
+      
+      requirementData.allRequirements.forEach(req => {
+        const th = document.createElement('th');
+        th.className = 'req-row';
+        th.textContent = req;
+        footerRow.appendChild(th);
+      });
+      
+      foot.appendChild(footerRow);
+    }
+    
+    document.addEventListener('DOMContentLoaded', generateRequirementMatrix);
+  </script>
+</body>
+</html>
